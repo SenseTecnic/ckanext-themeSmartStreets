@@ -1,0 +1,154 @@
+
+
+
+
+body {
+  background: #303030;
+}
+
+
+.btn-primary.active,
+.btn-warning.active,
+.btn-danger.active,
+.btn-success.active,
+.btn-info.active,
+.btn-inverse.active {
+  color: rgba(255, 255, 255, 0.75);
+}
+.btn-primary {
+  color: #ffffff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #011640;
+  background-image: -moz-linear-gradient(top, #30778d, #085871);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#30778d), to(#085871));
+  background-image: -webkit-linear-gradient(top, #022772, #011640);
+  background-image: -o-linear-gradient(top, #30778d, #085871);
+  background-image: linear-gradient(to bottom, #30778d, #085871);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff30778d', endColorstr='#ff085871', GradientType=0);
+  border-color: #085871 #085871 #03202a;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  *background-color: #085871;
+  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
+
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+}
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.btn-primary.disabled,
+.btn-primary[disabled] {
+  color: #ffffff;
+  background-color: #011f59;
+  *background-color: #011f59;
+}
+.btn-primary:active,
+.btn-primary.active {
+  background-color: #011f59 \9;
+}
+
+
+a.tag:hover{
+  text-decoration: none;
+  color: #fff;
+  //ackground-color: rgba(1,22,64,0.8);
+  border: 1px solid rgb(1,22,64);
+  -webkit-box-shadow: inset 0 1px 0 #3d97b3;
+  -moz-box-shadow: inset 0 1px 0 #3d97b3;
+  box-shadow: inset 0 1px 0 #3d97b3;
+}
+
+.masthead{
+  background: #f0f0f0;
+}
+
+.hero{
+  background: #f0f0f0;
+}
+
+.site-footer{
+  background: #303030;
+}
+
+.masthead a{
+  color: #000;
+}
+
+.masthead a:hover{
+  color: #fff;
+}
+
+.masthead .site-search{
+  margin-top: 6px;
+}
+
+.masthead .navigation .nav-pills li a:hover{
+  background-color: #444;
+}
+
+.masthead .navigation .nav-pills li.active a{
+  background: #fd7800;
+}
+
+.account-masthead{
+  background: #fd7800;
+  min-height: 23px;
+}
+
+.account-masthead .account ul li a{
+  color: #f0f0f0;
+  line-height: 23px;
+}
+
+.account-masthead .account ul li a:hover{
+  background: #011640;
+}
+
+.account-masthead .account ul li{
+  border-left: 1px solid #f0f0f0;
+}
+
+[role=main], .main{
+  background: #f0f0f0;
+  min-height: 300px;
+}
+
+.main.homepage{
+  display:none;
+}
+
+.section.navigation .nav-pills > li > a{
+  margin-top: -10px;
+  padding: 25px 20px;
+  border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+}
+.section.navigation .nav-tabs > li > a, .nav-pills > li > a{
+  margin-right: 0px;
+}
+
+.hero .module-dark .module-content{
+  background-color: rgba(253, 120, 0, 0.7);
+}
+.hero .tags{
+  background-color: #fd7800;
+}
+
+.hero-secondary{
+  position: relative;
+}
+
+
+.nav-item.active > a{
+  background-color: rgba(253, 120, 0, 0.8);
+}
+
+.nav-item.active > a:hover{
+  background-color: rgba(253, 120, 0, 1);
+}
+
+.site-footer{
+  border-top: 8px solid #000;
+}
