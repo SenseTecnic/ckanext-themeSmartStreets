@@ -57,7 +57,7 @@ class SmartStreetsThemePlugin(SingletonPlugin):
                 config.get('extra_template_paths', '')])
         # add in the extra.css
         config['ckan.template_head_end'] = config.get('ckan.template_head_end', '') +\
-                                           '<link rel="stylesheet" href="/css/extra.css" type="text/css"> '
+                                           '<link rel="stylesheet" href="'+config['ckan.site_url']+'/css/extra.css" type="text/css"> '
         # set the title
         config['ckan.site_title'] = "Example CKAN theme"
         # set the customised package form (see ``setup.py`` for entry point)
