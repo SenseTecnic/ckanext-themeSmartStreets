@@ -32,15 +32,6 @@ class SmartStreetsThemePlugin(SingletonPlugin):
     implements(IConfigurer, inherit=True)
     implements(IRoutes, inherit=True)
 
-    @staticmethod
-    def url_for_base(self, config):
-    	return config['themeSmartStreets.hub_base_url']
-
-	def get_helpers(self):
-		# This method is defined in the ITemplateHelpers interface and
-        # is used to return a dict of named helper functions.
-		return {'url_for_base': url_for_base}
-
     def update_config(self, config):
         """This IConfigurer implementation causes CKAN to look in the
         ```public``` and ```templates``` directories present in this
