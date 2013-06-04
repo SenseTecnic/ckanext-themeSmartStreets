@@ -32,6 +32,15 @@ class SmartStreetsThemePlugin(SingletonPlugin):
     implements(IConfigurer, inherit=True)
     implements(IRoutes, inherit=True)
 
+    @staticmethod
+    def url_for_base(self, config):
+    	return config['themeSmartStreets.hub_base_url']
+
+	def get_helpers(self):
+		# This method is defined in the ITemplateHelpers interface and
+        # is used to return a dict of named helper functions.
+		return {'url_for_base': url_for_base}
+
     def update_config(self, config):
         """This IConfigurer implementation causes CKAN to look in the
         ```public``` and ```templates``` directories present in this
@@ -59,7 +68,7 @@ class SmartStreetsThemePlugin(SingletonPlugin):
         config['ckan.template_head_end'] = config.get('ckan.template_head_end', '') +\
                                            '<link rel="stylesheet" href="'+config['ckan.site_url']+'/css/extra.css" type="text/css"> '
         # set the title
-        config['ckan.site_title'] = "Example CKAN theme"
+        config['ckan.site_title'] = "Smart Streets Datahub"
         # set the customised package form (see ``setup.py`` for entry point)
         config['package_form'] = "example_form"
 
