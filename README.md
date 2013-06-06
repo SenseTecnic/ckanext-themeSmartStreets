@@ -1,7 +1,7 @@
 ckanext-themeSmartStreets
 =========================
 
-This repository contain the ckan extension to override the default ckan front-end components with a Smart Streets theme.
+This repository contains the ckan extension to override the default ckan front-end components with a Smart Streets theme.
 
 Installation
 ============
