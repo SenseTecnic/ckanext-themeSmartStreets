@@ -5,7 +5,7 @@
         {% block footer_nav %}
           <ul class="unstyled">
             {% block footer_links %}
-              <li><a href="{{ h.smartstreets_about_url() }}">{{ _('About {0}').format(g.site_title) }}</a></li>
+              <li><a href="{{ h.smartstreets_base_url() }}/about">{{ _('About {0}').format(g.site_title) }}</a></li>
             {% endblock %}
           </ul>
         {% endblock %}

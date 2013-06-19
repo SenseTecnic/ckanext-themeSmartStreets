@@ -81,24 +81,20 @@
         <nav class="section navigation">
           <ul class="nav nav-pills">
             <li><a href="{{ h.smartstreets_base_url() }}">Home</a></li>
-            <li><a href="{{ h.smartstreets_about_url() }}">About</a></li>
+            <li><a href="{{ h.smartstreets_base_url() }}/about">About</a></li>
             {% block header_site_navigation_tabs %}
             {{ h.build_nav_main(
               ('search', _('Datasets'))
             ) }}
-            {% endblock %}            
+            {% endblock %}
+            <li><a href="{{ h.wotkit_url() }}/sensors">Sensors</a></li>
+            <li><a href="{{ h.smartstreets_base_url() }}/apidocs">API</a></li>
+            <li><a href="{{ h.smartstreets_base_url() }}/contact">Contact</a></li>    
           </ul>
         </nav>
       {% endblock %}
 
       {% block header_site_search %}
-        <form class="section site-search simple-input" action="{% url_for controller='package', action='search' %}" method="get">
-          <div class="field">
-            <label for="field-sitewide-search">{{ _('Search Datasets') }}</label>
-            <input id="field-sitewide-search" type="text" name="q" placeholder="{{ _('Search') }}" />
-            <button class="btn-search" type="submit">{{ _('Search') }}</button>
-          </div>
-        </form>
       {% endblock %}
 
     </div>
