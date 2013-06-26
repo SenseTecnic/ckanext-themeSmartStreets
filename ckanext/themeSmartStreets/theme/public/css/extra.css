@@ -6,8 +6,8 @@ body {
   background: #303030;
 }
 
-iframe body{
-  background: #fff;
+.data-view-container{
+  background: #fff !important;
 }
 
 .btn-primary.active,
