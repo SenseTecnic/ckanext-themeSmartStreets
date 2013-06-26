@@ -3,11 +3,7 @@
 
 
 body {
-  background: #303030;
-}
-
-.data-view-container{
-  background: #fff !important;
+  background: #fff;
 }
 
 .btn-primary.active,
@@ -72,6 +68,7 @@ a.tag:hover{
 
 .site-footer{
   background: #303030;
+  min-height: 200px;
 }
 
 .masthead a{
