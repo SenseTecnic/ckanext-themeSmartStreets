@@ -6,6 +6,9 @@ body {
   background: #303030;
 }
 
+iframe body{
+  background: #fff;
+}
 
 .btn-primary.active,
 .btn-warning.active,
