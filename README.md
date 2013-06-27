@@ -18,6 +18,10 @@ Then activate it by setting ``ckan.plugins = themeSmartStreets`` in your main ``
 =========================
 Changelog
 
+v1.1.2
+- added link to wotkit sensors, api documentation and contacts page in the header
+- removed search bar from header
+
 v0.5 
 - initial implementation of the smart streets theme extension
 - changes to color and layout to fit the hub-landing page
