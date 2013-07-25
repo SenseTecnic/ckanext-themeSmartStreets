@@ -18,6 +18,9 @@ Then activate it by setting ``ckan.plugins = themeSmartStreets`` in your main ``
 =========================
 Changelog
 
+v-1.2
+- Fixes in html templates after merging upstream into sensetecnic/ckan
+
 v1.1.2
 - added link to wotkit sensors, api documentation and contacts page in the header
 - removed search bar from header
@@ -28,6 +31,4 @@ v0.5
 - hard coded links to the hub-landing page instead of the default ckan home page
 - hard coded links to the hub-landing about page
 
-release-1.2
-- Fixes in html templates after merging upstream into sensetecnic/ckan
 
